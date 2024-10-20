@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e8dc9d;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: cornflowerblue;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  list-style: none;
+}
+
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+nav ul li a {
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+nav ul li img{
+    width: 60px;
+    height: 60px;
+    border-radius: 80%;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #d54275;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
+footer {
+  background: #98f364;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+footer h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .social-media a i{
+    width: 80px;
+    font-size: 40px;
+}
+footer .social-media a {
+    height: min-content;
+    color: #333;
+    font-size: 20px;
+    padding: 6px 0;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    transition: all 0.4s ease;
+}
+
+footer .social-media a:hover {
+color: rosybrown;
+}
+
+footer .social-media .icon {
+position: relative;
+}
+
+footer .social-media .icon:before {
+content: '';
+position: absolute;
+bottom: -3px;
+left: 50%;
+transform: translateX(-50%);
+height: 3px;
+width: 0;
+background: gold;
+border-radius: 12px;
+transition: all 0.4s ease;
+}
+
+footer .social-media .icon:hover:before {
+width: 100%;
+}
+footer p{
+    margin: 10px 0 0 0;
+}

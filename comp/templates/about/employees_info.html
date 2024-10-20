@@ -1,0 +1,28 @@
+{% for work in info %}
+<br><br>
+<div class="card">
+  <div class="left-container">
+    <img src="{{ work.picture.url }}" alt="Profile Image">
+    <h2 class="gradienttext">{{ work.name}}</h2>
+    <p class="p">{{ work.position }}</p>
+  </div>
+  <div class="right-container">
+    <h3 class="gradienttext">About {{ work.name }}</h3>
+    <table>
+        <tr>
+            <td>First name :</td>
+            <td>{{ work.name }}</td>
+        </tr>
+        <tr>
+            <td>Last name :</td>
+            <td>{{ work.surname }}</td>
+        </tr>
+        <tr>
+            <td>Age :</td>
+            <td>{{ work.age }}</td>
+        </tr>
+    </table>
+</div>
+</div>
+<br><br>
+{% endfor %}

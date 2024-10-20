@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo/OIP.jpg'%} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/'|add:html_name|add:'.css'%}">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><img class="logo" src="{% static 'images/logo/OIF.jpg' %}" alt="Logo"></li>
+        <li><a href="{% url 'about' %}"> Activity</a></li>
+        <li><a href="{% url 'employees-info' %}">Employees</a></li>
+        <li><a href="{% url 'report' %}">Contact Report</a></li>
+    </ul>
+</nav>
+<main>
+    {% include 'about/'|add:html_name|add:'.html' %}
+</main>
+<footer>
+    <h2>About me</h2>
+    <div class="social-media">
+        <a href="https://vk.com/?lang=en" target="_blank" class="icon"><i class="fab fa-vk"></i></a>
+        <a href="https://x.com/x%7D" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>2024, O'zbekiston , PDP University</p>
+    <p>My connection, email us at aliqulovdavron11@gmail.com</p>
+    <div class="additional-info">
+        <p>I am a graduate of the Faculty of physics of the University of counter-drums</p>
+        <p>I am currently learning the Python programming language Django framework and Rest API</p>
+    </div>
+</footer>
+</body>
+</html>

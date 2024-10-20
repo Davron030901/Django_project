@@ -1,0 +1,46 @@
+.report-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.report-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.report-form label {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.report-form input[type="text"],
+.report-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.report-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.report-form button[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.report-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
