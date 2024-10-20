@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "login_head.html" %}
+<body>
+    <div class="cont">
+        <form method="post">
+            <h1>Login page</h1>
+            {% csrf_token %}
+            <label for="">Email</label>
+            <input name='email',type="email" placeholder="Emailingizni kiriting">
+            <label for="">Password</label>
+            <input name='password',type="password" placeholder="Passwordingizni kiriting">
+            <button type="submit">Send</button>
+            <p>or</p>
+            <a href="{% url 'register' %}">Register</a>
+        </form>
+    </div>
+</body>
+</html>

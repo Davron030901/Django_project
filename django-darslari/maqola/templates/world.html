@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+    <div class="container">
+<!--  Bu yerdan login qilgan userlar uchun page yaratiladi       -->
+        {% if request.user.is_authenticated %}
+        {% include "login_navbar.html" %}
+        {% else %}
+        <!--  Bu yerdan login qilmagan userlar uchun page yaratiladi       -->
+        {% include "navbar.html" %}
+        {% endif %}
+        {% for maqola in w_news %}
+        <div class="maqola">
+            <a href="{% url 'article_detail' maqola.id %}">{{ maqola.title }}</a>
+            <p>{{ maqola.description }}</p>
+            <h4>Author: {{ maqola.author }}</h4>
+            <img src="{{ maqola.imageURL }}" width="500px" height="200px">
+            <p>Yaratilgan Vaqt:{{ maqola.created }} </p>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

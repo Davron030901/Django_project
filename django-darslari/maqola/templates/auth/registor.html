@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "login_head.html" %}
+<body>
+    <div class="cont">
+        <form method="post">
+            <h1>Register page</h1>
+            {% csrf_token %}
+            <label for="">Email</label>
+            <input name='email',type="email" placeholder="Emailingizni kiriting">
+            <label for="">First Name</label>
+            <input name='first_name',type="text" placeholder="Ismingizni kiriting">
+            <label for="">Last Name</label>
+            <input name='last_name',type="text" placeholder="Familyangizni kiriting">
+            <label for="">Pasword</label>
+            <input name='password1',type="password" placeholder="Passwordingizni kiriting">
+            <label for="">Conf Password</label>
+            <input name='password2',type="password" placeholder="Passwordingizni qayta kiriting kiriting">
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+</body>
+</html>

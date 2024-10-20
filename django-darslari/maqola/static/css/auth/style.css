@@ -1,0 +1,38 @@
+.cont{
+    width:80%;
+    height: 80vh;
+    background-color: beige;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+input{
+    display: block;
+    padding: 10px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+button{
+    display: block;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 50px auto;
+}
+a{
+    display: block;
+    padding: 10px ;
+    width: 150px;
+    margin: 5px auto;
+    text-align: center;
+    text-decoration: none;
+}
+p{
+    display: block;
+    padding: 10px ;
+    width: 150px;
+    margin: 5px auto;
+    text-align: center;
+}

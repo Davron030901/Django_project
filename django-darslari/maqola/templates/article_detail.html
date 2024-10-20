@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+    <div class="container">
+
+        <div class="maqola">
+            <div class="area">
+                <a href="{% url 'home' %}">🏘</a>
+                {% if maqola.tag %}
+                <a href="{% url 'sport' %}">{{ maqola.tag }}</a>
+                {% endif %}
+            </div>
+            <h1>{{ maqola.tag }}</h1>
+            <h2>{{ maqola.title }}</h2>
+            <img src="{{ maqola.imageURL }}" width="500px" height="200px">
+            <p>{{ maqola.description }}</p>
+            <h4>Author: {{ maqola.author }}</h4>
+            <p>Yaratilgan Vaqt:{{ maqola.created }} </p>
+            <hr>
+        </div>
+
+    </div>
+</body>
+</html>
