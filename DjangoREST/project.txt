@@ -1,0 +1,5 @@
+# Restaurant want to display menu on:
+
+=> website
+=> mobile app
+=> in-store display screens
