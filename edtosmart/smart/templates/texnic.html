@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% include "head.html" %}
+<html lang="en">
+
+<body>
+    <div class="nav">
+        {% include "navbar.html" %}
+    </div>
+
+    <div class="container">
+        <div class="flesh">
+            <h2>{{ detail.name }}</h2>
+            <img src="{{ detail.imageURL }}" width="250px" height="200px">
+            <p>{{ gadget.price }}</p>
+            <p>{{ detail.description }}</p>
+            <h2>Count: {{ detail.count }}</h2>
+            <h5>Color:{{ detail.color }}</h5>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>
+

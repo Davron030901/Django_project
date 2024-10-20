@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.html" %}
+<body>
+    <div class="nav">
+        {% include "navbar.html" %}
+    </div>
+    <div class="container">
+        {% for gadget in texnikalar %}
+        <div class="flesh">
+            <img src="{{ gadget.imageURL }}" width="250px" height="200px">
+            <a href="{% url 'texnic_detail' gadget.id %}">{{ gadget.name }}</a>
+            <p>{{ gadget.price }}</p>
+            <h2>Count: {{ gadget.count }}</h2>
+            <h5>Color:{{ gadget.color }}</h5>
+            <button>Buy</button>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --accent: #564A70;
+    --dark: #71cd71;
+    --light: #32ff23;
+    --text-color: #757575;
+    --bg-color: #f9f9f9;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+    background-color: #cdcd67;
+}
+
+
+.nav{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 20px 40px;
+     background-color: #005000;
+     margin: 10px;
+     padding: 20px;
+     font-size: 30px;
+
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+
+}
+
+.navbar a{
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    color: var(--dark);
+    font-weight: bold;
+}
+button{
+    color: var(--accent);
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 80px 20px 20px;
+    margin-top: 80px; /* Adjusted to accommodate the fixed navbar */
+}
+
+
+.flesh:hover{
+    transform: translateY(-4px);
+}
+
+.flesh{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px #aaa;
+    transition: .2s;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+}
