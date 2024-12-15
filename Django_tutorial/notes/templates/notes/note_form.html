@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create New Note</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Save</button>
+</form>
+{% comment %} {% if form.errors %}
+<div>
+    {{form.errors.title.as_text}}
+</div>
+{% endif %} {% endcomment %}
+<a href="{% url 'notes.list'  %}">Censel</a>
+{% endblock %}
+ 
